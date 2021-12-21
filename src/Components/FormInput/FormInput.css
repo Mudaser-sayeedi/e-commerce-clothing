@@ -1,0 +1,42 @@
+.input{
+    display: flex;
+    flex-direction: column;
+}
+.input-type{
+    height: 30px;
+    padding: 5px;
+    background-color: transparent;
+    text-indent: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+    /* border-radius: 12px; */
+    z-index: 2;
+}
+.input-type:focus{
+    outline: none;
+    border:2px solid green;
+}
+.input-label{
+    position: relative;
+    left: 5px;
+    bottom: 50%;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.575);
+    width: fit-content;
+    padding: 0 3px;
+    text-align: center;
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+}
+.input-type:focus + .input-label {
+    z-index: 3;
+    bottom: 90%;
+    left: 4%;
+}
+.input-type::placeholder{
+    color: transparent;
+}
+.input-type:focus::placeholder{
+    color: gray;
+}

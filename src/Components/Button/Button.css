@@ -1,0 +1,20 @@
+.Button{
+    width: fit-content;
+    padding: 15px;
+    font-size: 20px;
+    border: 2px solid green;
+    color: white;
+    background-color: green;
+    margin: 3px;
+}
+.Button:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+}
+
+@media screen and (max-width:1000px) {
+    .Button{
+        font-size: 10px;
+    }
+}

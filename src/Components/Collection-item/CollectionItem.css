@@ -1,3 +1,6 @@
+.item-container{
+    margin: 20px 10px;
+}
 .items{
     width: 100%;
     display: flex;

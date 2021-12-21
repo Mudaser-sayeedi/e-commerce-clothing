@@ -1,0 +1,33 @@
+.navBar{
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    background-color: white;
+    opacity: 0.9;
+    z-index: 10;
+    padding: 10px 0px;
+}
+.navBar:hover{
+    opacity: 1;
+}
+
+.navBar-logo{
+    width: 90px;
+    transition: all 0.5s ease-in-out;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+@media screen and (max-width:1000px) {
+    .navBar-logo{
+        width: 50px;
+    }
+}

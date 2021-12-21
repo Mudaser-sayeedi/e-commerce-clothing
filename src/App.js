@@ -4,6 +4,7 @@ import './App.css';
 import Home from './Pages/Home/Home';
 import Shop from './Pages/Shop/Shop';
 import NavBar from './Components/NavBar/NavBar';
+import SignInAndSignUp from './Pages/Sign-in-and-Sign-up/Sign-in-and-Sign-up';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='shop' element={<Shop></Shop>}></Route>
+        <Route path='signIn' element={<SignInAndSignUp></SignInAndSignUp>}></Route>
         <Route path='*' element={
           <div>
             <h1 style={{textAlign:'center',color:'red'}}>This route is not exist..!</h1>
