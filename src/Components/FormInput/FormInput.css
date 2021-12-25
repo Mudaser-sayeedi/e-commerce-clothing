@@ -44,3 +44,13 @@
     color: gray;
     transition: 1.5s;
 }
+.input-type[value]:not([value='']) + .input-label{
+    z-index: 3;
+    bottom: 90%;
+    left: 4%;
+    font-size: 12px;
+}
+.input-type[value]:not([value='']){
+    outline: none;
+    border:2px solid green;
+}
