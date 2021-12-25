@@ -10,7 +10,6 @@
     outline: none;
     border: none;
     border-bottom: 2px solid black;
-    /* border-radius: 12px; */
     z-index: 2;
 }
 .input-type:focus{
@@ -27,16 +26,21 @@
     padding: 0 3px;
     text-align: center;
     z-index: 1;
+    user-select: none;
     transition: 0.3s ease-in-out;
 }
 .input-type:focus + .input-label {
     z-index: 3;
     bottom: 90%;
     left: 4%;
+    font-size: 12px;
 }
 .input-type::placeholder{
     color: transparent;
+    user-select: none;
+    transition: 1ms;
 }
 .input-type:focus::placeholder{
     color: gray;
+    transition: 1.5s;
 }

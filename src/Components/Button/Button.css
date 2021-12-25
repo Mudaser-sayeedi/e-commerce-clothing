@@ -5,7 +5,7 @@
     border: 2px solid green;
     color: white;
     background-color: green;
-    margin: 3px;
+    user-select: none;
 }
 .Button:hover{
     background-color: white;

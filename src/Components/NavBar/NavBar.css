@@ -13,21 +13,43 @@
 .navBar:hover{
     opacity: 1;
 }
-
+.navBar-links{
+    display: flex;
+    align-items: center;
+}
 .navBar-logo{
     width: 90px;
     transition: all 0.5s ease-in-out;
 }
 
-a{
+.navBar-links> a{
     text-decoration: none;
     color: black;
     text-transform: uppercase;
     margin: 10px;
 }
+.signInandOut{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.signInandOut > a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
 
+}
 @media screen and (max-width:1000px) {
     .navBar-logo{
         width: 50px;
+    }
+    .navBar-links> a,.signInandOut > a,.signInandOut{
+        font-size: 10px;
+        transition: all 0.5s ease-in-out;
+        margin: 3px;
+    }
+    .App{
+        padding: 10px 10px;
     }
 }
