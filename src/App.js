@@ -8,7 +8,6 @@ import SignInAndSignUp from './Pages/Sign-in-and-Sign-up/Sign-in-and-Sign-up';
 import { getAuth, onAuthStateChanged, signInWithPopup, GoogleAuthProvider, signOut, createUserWithEmailAndPassword, signInWithEmailAndPassword} from "firebase/auth";
 import { app } from './Firebase/Firebase.config';
 
-
 class App extends Component{
   constructor() { 
     super();
