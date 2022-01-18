@@ -1,0 +1,68 @@
+.cardShop-container{
+    /* background-color: black; */
+    width: 85%;
+    margin: 0 auto;
+}
+
+.lable-container{
+    /* background-color: blue; */
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.lable-container span{
+    font-size: 25px;
+}
+hr{
+    margin: 20px 0;
+}
+
+.cardShop{
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+}
+.cardShop img{
+    width: 200px;
+}
+.shopDetails{
+    /* background-color: purple; */
+    margin-left: 45px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.shopDetails h2{
+    /* background-color: orange; */
+    width: 34%;
+}
+.quantity{
+    /* background-color: orangered; */
+    width: 30%;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+.quantity span{
+    margin:0 12px;
+    cursor: pointer;
+    user-select: none;
+}
+.price{
+    /* background-color: palevioletred; */
+    width: 24%;
+    margin-right: 40px;
+    font-size: 40px;
+}
+.remove{
+    font-size: 50px;
+    cursor: pointer;
+    user-select: none;
+}
+.total{
+    /* background-color: royalblue; */
+    display: flex;
+    justify-content:flex-end;
+}
+
+
