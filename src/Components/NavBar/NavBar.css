@@ -1,4 +1,4 @@
-.navBar{
+.navBar:not(.shoppingBag-dropDown){
     position: sticky;
     top: 0px;
     display: flex;
@@ -40,16 +40,104 @@
     text-transform: uppercase;
 
 }
+
+.shoppingBag-container{
+    width: 30px;
+    cursor: pointer;
+}
+.shoppingBag-icon{
+    width: 100%;
+    height: 100%;
+}
+.shopping-bag{
+    width: 100%;
+    user-select: none;
+}
+.shopping-counter{
+    position: absolute;
+    right: 10px;
+    bottom: 34px;
+    font-size: 18px;
+    user-select: none;
+}
+.shoppingBag-dropDown{
+    width: 300px;
+    height: 450px;
+    position: fixed;
+    top: 73px;
+    right: 42px;
+    z-index: 0;
+    background-color: whitesmoke;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    box-shadow: 0px 20px 30px 5px rgba(0, 0, 0, 0.7);
+    /* opacity: 0; */
+    transform: scaleY(0);
+    /* transform: translateY(-73vh); */
+    transition: all 0.3s ease-in-out;
+}
+
+/* with css only */
+/* .shoppingBag-container:hover  .shoppingBag-dropDown{
+    transition: all 0.3s ease-in-out;
+    transform: scaleY(1);
+    opacity: 1;
+} */
+
+/* with js add remove toggle classes */
+.show{
+    transition: all 0.3s ease-in-out;
+    /* opacity: 1; */
+    transform: scaleY(1);
+    /* transform: translateY(0); */
+}
+
+.shoppingItems-menu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.shoppingItems-menu Button{
+    margin: auto auto 20px;
+}
+
+.shopping-items{
+    width: 90%;
+    overflow-y: auto;
+    margin: 20px;
+}
+
+
 @media screen and (max-width:1000px) {
     .navBar-logo{
         width: 50px;
     }
     .navBar-links> a,.signInandOut > a,.signInandOut{
-        font-size: 10px;
+        font-size: 16px;
         transition: all 0.5s ease-in-out;
         margin: 3px;
     }
     .App{
         padding: 10px 10px;
+    }
+    /* .shopping-bag{
+        width: 25px;
+    } */
+    .shoppingBag-container{
+        width: 28px;
+    }
+    .shopping-counter{
+        font-size: 15px;
+        bottom: 20px;
+        right: 10px;
+    }
+    .shoppingBag-dropDown{
+        top: 56px;
+        right: 15px;
     }
 }

@@ -16,12 +16,17 @@
     justify-content: center;
     align-items: center;
 }
+
 .item-image{
     height: 100%;
     width: 100%;
     background-position: center;
     background-size: cover;
 }
+.item:hover .item-image{
+    opacity: 0.7;
+}
+
 .item-footer{
     width: 100%;
     display: flex;
@@ -31,6 +36,29 @@
 }
 .item-name{
     margin: 0;
+}
+.item-addCard{
+    width: auto;
+    height:inherit;
+    box-sizing: border-box;
+    padding-bottom: 50px;
+    opacity: 0;
+    /* background-color: black; */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    transition: all 0.3s ease-in-out;
+}
+.item:hover .item-addCard{
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+Button{
+    opacity: 0.8;
+}
+Button:hover{
+    opacity: 1;
 }
 
 @media screen and (max-width:1000px) {

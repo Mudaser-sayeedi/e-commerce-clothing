@@ -5,10 +5,14 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
+import react from 'react';
 
 ReactDOM.render(
+  
   <BrowserRouter>
-    <App />
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
   </BrowserRouter>,
   document.getElementById('root')
 );

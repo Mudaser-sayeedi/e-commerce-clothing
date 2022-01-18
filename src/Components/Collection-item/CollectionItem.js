@@ -1,6 +1,7 @@
 import './CollectionItem.css'
+import Button from '../Button/Button';
 
-const CollectionItem = ({ title, items }) => {
+const CollectionItem = ({ title, items, addToCard }) => {
     return (
         <div className='item-container'>
             <h1 className='collection-title'>{title.toUpperCase()}</h1>
@@ -24,6 +25,13 @@ const CollectionItem = ({ title, items }) => {
                                     <div className='item-footer'>
                                         <p className='item-name'>{item.name}</p>
                                         <span className='item-price'>{item.price}$</span>
+                                    </div>
+                                    <div className='item-addCard'>
+                                        <Button className='addCardButton' style={{
+                                            backgroundColor: 'whitesmoke',
+                                            color: 'black',
+                                            borderColor: 'black',
+                                        }} onClick={()=>addToCard(item)}>Add To Card</Button>
                                     </div>
                                 </div>
                             )
